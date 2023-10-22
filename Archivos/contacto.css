@@ -1,0 +1,76 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+header {
+    background-color:aqua;
+
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main {
+    max-width: 1000px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact-form {
+    flex: 1;
+    padding: 20px;
+}
+
+.contact-form h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.contact-form label {
+    font-size: 16px;
+    margin: 10px 0;
+    display: block;
+    color: #555;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.contact-form button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.map {
+    flex: 1;
+    padding: 20px;
+}
+
+.map h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+iframe {
+    border: none;
+    border-radius: 10px;
+}
