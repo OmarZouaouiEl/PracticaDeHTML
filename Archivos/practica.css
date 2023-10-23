@@ -1,113 +1,149 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&family=Maven+Pro:wght@400;700&display=swap&#39');
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;400&family=Maven+Pro:wght@400;700&display=swap&#39');
 
-
-#section1{
-    display:flex;
-    justify-content: space-around;
-    gap: 1em;
-
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
 }
-#titulogrande{
-   background-color: aqua;
+#menu {
+    text-align: center;
+    margin-top: 20px;
 }
-
-#section3{
-    width: 25%;
+#menu h2 {
+    color: yellow;
+    cursor: pointer;
+    transition: color 0.3s;
+    width: 100vw;
+}
+#menu h2:hover {
+    color: #007BFF;
+}
+nav {
+    width: 100vw;
+}
+nav ul {
+    list-style: none;
+    display: flex;
     justify-content: space-around;
-    gap: 1em;
-    border: dotted;
-    background-color: #33a7be8a;
+    padding: 0;
+    width: 400px;
+    margin: 0 auto;
+}
+nav li {
+    flex: 1;
     text-align: center;
 }
-#section2{
-    display:flex;
-    justify-content: space-around;
-    gap: 1em;
-    flex-wrap: wrap;
-    
+nav a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+nav a:hover {
+    color: #007BFF;
 }
 nav{
 background-color: yellow;
 width: 100%;
 }
-
+.centered{
+display: flex;
+}
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
-
-header {
-    display: flex;
-    align-items: center;
-    background: linear-gradient(90deg, #007BFF 50%, yellow 50%);
-    padding: 20px;
-    width: 50%;
-}
 #logo {
-    background: #007BFF;
-    padding: 10px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: background 0.3s;
-    text-align: center; /* Centra el contenido horizontalmente */
+   background-color: #0056b3;
+    justify-content: center;
+    align-items: center;
 }
-
-#logo:hover {
-    background: black;
+#logo img {
+    display: block; 
+    margin: 0 auto;
+    background-color: #0056b3;
+    justify-content: center;
+    align-items: center;
 }
-
-#menu {
-    text-align: center; /* Centra el contenido horizontalmente */
-    margin-top: 20px; /* Agrega espacio entre el logo y el menú */
+#section1 {
+    display: flex;
+    justify-content: space-around;
+    gap: 1em;
 }
-
-#menu h2 {
-    color: yellow;
-    cursor: pointer;
-    transition: color 0.3s;
-}
-
-#menu h2:hover {
-    color: #007BFF;
-}
-
-
-
-nav h2 {
-    display: inline-block;
-    margin: 0 10px;
-}
-
-section {
-    padding: 20px;
-}
-#articuloS1{
-
+#articuloS1 {
+    width: 400px; 
     border-style: dotted;
     border-color: yellow;
+    text-align: center; 
+    margin: 10px; 
+}
+#articuloS1 img {
+    width: 100%; 
+    height: auto; 
+}
+#titulogrande{
+   background-color: aqua;
+}
+a {
+    text-decoration: none; 
+}
+#section1 h2{
+    color: black; 
+    transition: color 0.3s; 
+}
+#noticias h2 {
+    color: black; 
+    transition: color 0.3s; 
+}
+#section1 h2 a:hover {
+    color: blue; 
+}
+#noticias h2 a:hover {
+    color: blue; 
+}
+#section1 button {
+    background-color: yellow;
+    color: black;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; 
+}
+.noticias button {
+    background-color: yellow;
+    color: black;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; 
+}
+#section1 button:hover{
+    background-color: blue; 
+    color: white; 
+}
+.noticias button:hover {
+    background-color: blue; 
+    color: white; 
+}
+section {
+    padding: 20px;
 }
 #articuloS2{
     border-radius: 5px;
     border: 2px solid #0A91AB;
     width: 40%;
-    position: relative;
-    
+    position: relative;   
 }
-
 article {
     margin-bottom: 20px;
 }
-#contenedor {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 10px;
-        text-align: center;
-}
-
-
-
 figure img {
     width: 100%; 
     max-width: 1000px; 
@@ -115,7 +151,6 @@ figure img {
     display: block; 
     margin: 0 auto;
 }
-
 button {
     background-color: yellow;
     color: black;
@@ -130,18 +165,14 @@ button {
     height: auto;
     display: block; 
     margin: 0 auto;
-
 }
-
 button:hover {
     background-color: #005f6b;
 }
-
 ul {
     list-style-type: none;
     padding: 0;
 }
-
 ul li {
     margin-bottom: 10px;
 }
@@ -149,33 +180,65 @@ ul li {
 
     display: flex;
 }
+#section3 {
+    width: 23%; 
+    justify-content: space-around;
+    gap: 1em;
+    border: dotted;
+    background-color: #33a7be8a;
+    text-align: center;
+    padding: 10px;
+}
+#section3 h3 {
+    color: #0056b3; /
+}
+#section3 h4 {
+    color: yellow; 
+}
+#section3 ul li {
+    margin-bottom: 10px; 
+}
+#section2 {
+    width: 77%; 
+    display: flex;
+    justify-content: space-around;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+#contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    text-align: center;
+}
+#noticias h3 {
+    color: #007BFF; 
+    text-align: center; 
+    margin-top: 10px; 
+}
 .noticias {
-    text-align: left; /* Alinea la fecha a la izquierda */
+    text-align: left;
     border: 2px solid #007BFF;
     padding: 20px;
     margin: 10px;
     border-radius: 10px;
     position: relative;
 }
-
 .noticias hr {
     border: none;
-    border-top: 10px solid yellow; /* Línea que separa fecha y título */
+    border-top: 10px solid yellow;
 }
-
 .noticias h2 {
-    color: yellow; /* Color amarillo para el título */
+    color: yellow;
 }
-
 .noticias img {
-    max-width: 50%; /* Establece un ancho máximo del 50% del contenedor */
-    width: 100%; /* Ajusta el ancho real de la imagen al 50% */
+    max-width: 100%;
+    width: 100%;
 }
-
 .noticias button {
     position: absolute;
     top: 10px;
-    right: 10px; /* Botón en la parte superior derecha */
+    right: 10px;
     background-color: yellow;
     color: black;
     border: none;
@@ -183,57 +246,56 @@ ul li {
     border-radius: 5px;
     cursor: pointer;
 }
-  
-
 .centered {
     text-align: center;
 }
 #rankings {
     display: flex;
-    justify-content: space-between; /* Distribuye los elementos en el espacio disponible */
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; 
+    text-align: center;
 }
-
+#rankings h3 {
+    color: #007BFF;
+    padding: 10px;
+    width: 100%; 
+    margin-bottom: 10px;
+}
 #rankings div {
-    text-align: center; /* Centra el contenido en cada círculo */
+    text-align: center;
+    flex: 0 1 calc(20% - 20px); 
+    margin: 10px;
+    border-radius:40%; 
 }
-
 #imagen_ranking {
-    width: 80px; /* Ancho de la imagen, ajusta según tus necesidades */
-    height: 80px; /* Altura de la imagen, ajusta según tus necesidades */
-    border-radius: 50%; /* Hace que la imagen sea circular */
-    border: 2px dotted #007BFF; /* Estilo del borde */
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; 
+    overflow: hidden;
 }
-
 #imagen_ranking h4 {
-    color: yellow; /* Color amarillo para el nombre */
+    color: yellow;
 }
-
 footer {
-    background-color: #A9A9A9; /* Fondo gris o marrón */
+    background-color: #A9A9A9; 
     padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #fff; /* Color del texto en el footer (blanco) */
+    color: #fff; 
 }
-
-/* Estilo para los enlaces de redes sociales */
 footer a {
     text-decoration: none;
     color: #fff;
     margin: 0 10px;
 }
-
-/* Estilo para el texto del centro abajo */
 footer .centered {
     text-align: center;
 }
-
-/* Estilo para el texto de la derecha arriba */
 footer .right {
     text-align: right;
 }
-
 .pagination {
     display: flex;
     list-style: none;
@@ -241,11 +303,9 @@ footer .right {
     padding: 0;
     justify-content: center;
   }
-  
   .pagination li {
     margin: 0 5px;
   }
-  
   .pagination a {
     display: block;
     padding: 10px 20px;
@@ -256,48 +316,36 @@ footer .right {
     border-radius: 5px;
     transition: background-color 0.3s;
   }
-  
-  /* Estilos generales para los botones de paginación */
 .pagination {
     display: flex;
     list-style: none;
     margin: 20px 0;
     padding: 0;
     justify-content: center;
-    background-color: #ccc; /* Cambiar el color de fondo a gris */
+    background-color: #ccc; 
   }
-  
   .pagination li {
     margin: 0 5px;
   }
-  
   .pagination a {
     display: block;
     padding: 10px 20px;
     text-align: center;
     background-color: white;
-    color: blue; /* Cambiar el color del texto a blanco */
+    color: blue; 
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s;
   }
-  
-  /* Cambiar el color al pasar el ratón por encima */
   .pagination a:hover {
     background-color: #0056b3;
   }
-  
-  /* Estilos para el botón de página activa */
   .pagination .active a {
     background-color: #0056b3;
   }
-  
-  /* Estilos para los botones "Anterior" y "Siguiente" */
   .pagination .prev-next a {
     background-color: #007BFF;
   }
-  
-  /* Cambiar el color al pasar el ratón por encima de "Anterior" y "Siguiente" */
   .pagination .prev-next a:hover {
     background-color: #0056b3;
   }

@@ -1,16 +1,75 @@
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f0f0f0;
-    margin: 0;
-}
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&family=Maven+Pro:wght@400;700&display=swap&#39');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;400&family=Maven+Pro:wght@400;700&display=swap&#39');
 
 header {
-    background-color: #0056b3;
-    color: white;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
     padding: 20px;
+    justify-content: center;
+    align-items: center;
 }
-
+#menu {
+    text-align: center;
+    margin-top: 20px;
+}
+#menu h2 {
+    color: yellow;
+    cursor: pointer;
+    transition: color 0.3s;
+    width: 100vw;
+}
+#menu h2:hover {
+    color: #007BFF;
+}
+nav {
+    width: 100vw;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    width: 400px;
+    margin: 0 auto;
+}
+nav li {
+    flex: 1;
+    text-align: center;
+}
+nav a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+nav a:hover {
+    color: #007BFF; 
+}
+nav{
+background-color: yellow;
+width: 100%;
+}
+.centered{
+display: flex;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+#logo {
+   background-color: #0056b3;
+    justify-content: center;
+    align-items: center;
+}
+#logo img {
+    display: block; 
+    margin: 0 auto; 
+    background-color: #0056b3;
+    justify-content: center;
+    align-items: center;
+}
 main {
     max-width: 1000px;
     margin: 20px auto;
@@ -19,63 +78,50 @@ main {
     border-radius: 10px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
 }
-
 .game-details {
     display: flex;
     justify-content: space-between;
 }
-
 .game-image {
     flex: 1;
 }
-
 .game-image img {
     max-width: 100%;
     border-radius: 10px;
 }
-
 .game-info {
     flex: 2;
     padding: 20px;
 }
-
 .game-info h2 {
     font-size: 24px;
     color: #333;
 }
-
 .game-info p {
     font-size: 16px;
     color: #555;
 }
-
 .description {
     margin-top: 20px;
 }
-
 .description h2 {
     font-size: 24px;
     color: #333;
 }
-
 .description p {
     font-size: 16px;
     color: #555;
 }
-
 .screenshots {
     margin-top: 20px;
 }
-
 .screenshots h2 {
     font-size: 24px;
     color: #333;
 }
-
 .screenshot {
     margin-top: 10px;
 }
-
 .screenshot img {
     max-width: 100%;
     border-radius: 10px;
